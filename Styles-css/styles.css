@@ -7,6 +7,8 @@ body {
 }
 
 
+
+
 /*------- header style 
 --------------------*/
 .navheader {
@@ -32,4 +34,79 @@ ul li {
 li a {
     text-decoration: none;
     font-family: Poppins;
+}
+
+/* -------main section 
+---------------------*/
+.influesnCon {
+    display: flex;
+    align-items: center;
+}
+
+.titleSty {
+    font-size: 52px;
+    font-family: Poppins;
+
+}
+
+p {
+    text-align: justify;
+    font-weight: 500;
+}
+
+button {
+    color: white;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border-radius: 20px;
+    border-color: white;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 600;
+
+
+
+}
+
+
+.influCamera {
+    overflow: hidden;
+    width: 150%;
+    cursor: pointer;
+}
+
+
+
+.influCamera img {
+    transform: scale(1);
+    transition: 0.4s ease-in-out;
+
+
+}
+
+.influCamera:hover img {
+    transform: scale(2);
+}
+
+/* logo item */
+.section2 {
+    padding: 50px;
+
+}
+
+hr {
+    /* color: rgba(255, 255, 255, 0.792); */
+    border-color: rgba(128, 128, 128, 0.112);
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    padding: 10px;
+    margin-left: 30px;
+
 }
