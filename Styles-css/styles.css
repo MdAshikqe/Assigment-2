@@ -42,6 +42,8 @@ li a {
     font-family: Poppins;
 }
 
+
+
 /* -------main section 
 ---------------------*/
 .influesnCon {
@@ -246,4 +248,101 @@ footer .iconsFoter {
     text-align: center;
     color: white;
     background-color: rgb(54, 54, 54);
+}
+
+
+/* other device screen */
+
+/* mobile Device only */
+
+@media only screen and (max-width:688px) {
+    /* header style */
+
+    .navheader {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .navheader li {
+        display: inline;
+        position: relative;
+        right: 30px;
+        margin: 0px;
+
+    }
+
+
+
+    /* specific product  */
+    .influesnCon {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .influCamera img {
+        width: 50%;
+        height: 50%;
+    }
+
+
+    /* logo in pages */
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0px 10px;
+    }
+
+    /* all product list */
+
+
+    .collectionAll {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    /* footer style */
+    .iconsFoter li a {
+        padding: 20px;
+    }
+
+
+}
+
+/* Only tab device */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .influesnCon {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .influCamera img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+
+        margin: 0px 20px;
+
+    }
+
+    .logo img {
+        width: 50%;
+        padding: 50px;
+    }
+
+    .collectionAll {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
 }
